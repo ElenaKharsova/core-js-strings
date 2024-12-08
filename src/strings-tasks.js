@@ -469,11 +469,9 @@ function unbracketTag(str) {
  *      'bon.scott@yahoo.com'
  *   ],
  *   'info@gmail.com' => ['info@gmail.com']
-  // return str.split(';').map((el) => `'${el}'`).join(`,
-  // `); 
-*/
-function extractEmails(/* str */) {
-  throw new Error('Not implemented');
+ */
+function extractEmails(str) {
+  return str.split(';').map((el) => `${el}`);
 }
 
 /**
